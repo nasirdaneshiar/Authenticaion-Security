@@ -16,7 +16,7 @@ app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(session({
-    secret:"Our little secret just for fun!",
+    secret:process.env.SECRET2,
     resave: false,
     saveUninitialized:false
 
